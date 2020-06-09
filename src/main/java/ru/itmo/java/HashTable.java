@@ -1,9 +1,9 @@
 package ru.itmo.java;
 
 public class HashTable {
-    private final static int DEFAULT_INITIAL_SIZE = 10;
-    private final static double RESIZE_MULTIPLY = 2;
-    private final static double DEFAULT_LOAD_FACTOR = 0.5;
+    private static final int DEFAULT_INITIAL_SIZE = 10;
+    private static final double RESIZE_MULTIPLY = 2;
+    private static final double DEFAULT_LOAD_FACTOR = 0.5;
 
     private Entry[] hashTable;
     private final double loadFactor;
@@ -111,7 +111,7 @@ public class HashTable {
         }
     }
 
-    private final static class Entry {
+    private static final class Entry {
         private final Object key;
         private final Object value;
 
